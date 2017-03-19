@@ -2,7 +2,7 @@ import React, { PropTypes } from 'react';
 
 const Counter = ({ count }) => (
   <div className="counter">
-    {count}
+    {count < 10 ? `0${count}` : count}
   </div>
 );
 

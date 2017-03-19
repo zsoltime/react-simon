@@ -13,16 +13,42 @@
   flex: 1 0 7rem
   height: 50%
   margin: 0
+  outline: none
   padding: 1rem
+  transition: background-color .2s ease-in-out
+
+  &:nth-child(1)
+    border-top-left-radius: 100%
+
+  &:nth-child(2)
+    border-top-right-radius: 100%
+
+  &:nth-child(3)
+    border-bottom-left-radius: 100%
+
+  &:nth-child(4)
+    border-bottom-right-radius: 100%
 
   &--red
-    background-color: tomato
+    background-color: #f1543f
+
+    &:active
+      background-color: #ff7058
 
   &--green
-    background-color: green
+    background-color: #5ac2ad
+
+    &:active
+      background-color: #4cdbc4
 
   &--yellow
-    background-color: orange
+    background-color: #ffce3e
+
+    &:active
+      background-color: #fee856
 
   &--blue
-    background-color: lightblue
+    background-color: #54c9eb
+
+    &:active
+      background-color: #84dbff
